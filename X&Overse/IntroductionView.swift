@@ -39,7 +39,7 @@ struct IntroductionView: View {
                         // go to about screen
                         showAboutPage.toggle()
                     } label: {
-                        Text("About")
+                        Text("Game Rules")
                             .foregroundStyle(.white)
                             .fontWeight(.bold)
                     }
@@ -56,8 +56,8 @@ struct IntroductionView: View {
                     
                 }
             }
-            .sheet(isPresented: $showAboutPage) {
-                Text("About the game page")
+            .fullScreenCover(isPresented: $showAboutPage) {
+                AbouView()
             }
             
         }
