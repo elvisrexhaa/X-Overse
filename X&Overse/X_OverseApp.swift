@@ -11,7 +11,7 @@ import SwiftUI
 struct X_OverseApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            IntroductionView()
         }
     }
 }
